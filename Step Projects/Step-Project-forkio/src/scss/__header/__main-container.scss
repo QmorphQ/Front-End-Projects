@@ -1,0 +1,54 @@
+.main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  &__title {
+    width: 270px;
+    text-align: center;
+    color: #ffffff;
+    font: bold 48px/48px $mainFont;
+    margin-top: 50px;
+  }
+  &__middle-text {
+    width: 100% - 15;
+    color: $accentColor;
+    font: normal 18px/24px $mainFont;
+    margin-top: 19px;
+    @include span-centerCap;
+  }
+  &__bot-text {
+    color: #848e97;
+    font: normal 14px/14px $mainFont;
+    margin-top: 14px;
+    @include span-centerUp;
+  }
+  &__btn {
+    @include center-element(0);
+  }
+  @media (min-width: $tabletMinWidth) {
+    &__title {
+      font: bold 72px/72px $mainFont;
+      width: 400px;
+    }
+    &__middle-text {
+      font: normal 24px/24px $offFont;
+      text-align: center;
+      text-transform: initial;
+    }
+  }
+  @media (min-width: $desctopMinWidth) {
+    &__title {
+      font: bold 82px/82px $mainFont;
+    }
+    &__middle-text {
+      text-align: center;
+      color: $accentColor;
+      font: normal 30px/30px $offFont;
+    }
+    &__bot-text {
+      font: normal 16px/16px $mainFont;
+    }
+  }
+}

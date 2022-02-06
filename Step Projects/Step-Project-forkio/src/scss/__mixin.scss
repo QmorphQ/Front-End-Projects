@@ -1,0 +1,25 @@
+@mixin span-centerCap {
+  text-transform: capitalize;
+  text-align: center;
+}
+@mixin span-centerUp {
+  text-transform: uppercase;
+  text-align: center;
+}
+@mixin red {
+  border: red 1px solid;
+}
+@mixin center-element ($pos-bot: 50%, $pos-left: 50%) {
+  position: absolute;
+  left: $pos-left;
+  bottom: $pos-bot;
+  transform: translate(-50%, 50%);
+}
+@mixin flex-box ($direction: null, $justify-i: center, $align-i: center, $basis: null){
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+  justify-content: $justify-i;
+  align-items:  $align-i;
+  flex-basis: $basis;
+}

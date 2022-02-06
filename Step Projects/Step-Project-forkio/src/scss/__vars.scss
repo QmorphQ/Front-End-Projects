@@ -1,0 +1,19 @@
+//Global:
+.active {
+  display: block;
+}
+$accentColor: #8d81ac;
+$sideColor: #ffffff;
+//fonts:
+$mainFont: "Montserrat", sans-serif;
+$offFont: "Lato", sans-serif;
+
+//Media break-points:
+$tabletMinWidth: 480px;
+$desctopMinWidth: 992px;
+
+//Hamburger menu:
+$bar-transition: 300ms cubic-bezier(0.23, 1, 0.32, 1);
+$bar-width: 26px;
+$bar-height: 3px;
+$bar-spacing: 7px;

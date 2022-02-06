@@ -1,0 +1,23 @@
+{
+  "name": "step-projec-the-ham",
+  "version": "1.0.0",
+  "description": "First project made with HTML && CSS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QmorphQ/Front-End-Projects.git#master"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Makovskij V.P.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QmorphQ/Front-End-Projects/issues"
+  },
+  "homepage": "https://github.com/QmorphQ/Front-End-Projects/tree/master#readme"
+}

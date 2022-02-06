@@ -1,1 +1,0 @@
-get installed globally modules: npm list -g --depth=0 

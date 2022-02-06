@@ -1,0 +1,32 @@
+.logo {
+  display: flex;
+  align-items: center;
+  &__img {
+    background-image: url(/src/img/Logo\ 1.png);
+    width: 43px;
+    height: 41px;
+  }
+  &__text {
+    text-transform: uppercase;
+    color: $accentColor;
+    font: bold 24px/16px $offFont;
+    display: inline-block;
+    margin-left: 17px;
+    display: none;
+  }
+  &:hover {
+    .logo {
+      &__img {
+        background-image: url(/src/img/logo-hover\ 1.png);
+      }
+      &__text {
+        color: $sideColor;
+      }
+    }
+  }
+  @media (min-width: $tabletMinWidth) {
+    &__text {
+      display: block;
+    }
+  }
+}

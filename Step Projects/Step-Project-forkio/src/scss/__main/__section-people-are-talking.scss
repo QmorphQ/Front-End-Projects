@@ -1,0 +1,55 @@
+@import "__flex-contaner";
+//===================================
+.content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/dist/img/footer-bg.png);
+  background: url(/dist/img/footer-bg.png), hsl(282, 14%, 27%);
+  background-size: 1380px 769px;
+  background-repeat: no-repeat;
+  background-position: top 0 right 50%;
+  &__title {
+    @include span-centerCap;
+    margin: 57px auto 8px auto;
+    width: 100% - 10;
+    color: #ffffff;
+    font: bold 36px/48px $mainFont;
+  }
+  &__bottom-text {
+    text-align: center;
+    width: 100% - 21;
+    color: #a291a5;
+    font: normal 14px/21px $offFont;
+    margin: 37px auto 19px auto;
+  }
+  & ::after {
+    content: " ";
+    width: 100% - 20;
+    height: 2px;
+    background-color: #645766;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @media (min-width: $tabletMinWidth) {
+    &__title {
+      margin: 85px auto 45px auto;
+      font: bold 42px/44px $mainFont;
+    }
+    &__bottom-text {
+      margin-top: 68.5px;
+    }
+  }
+  @media (min-width: $desctopMinWidth) {
+    &__title {
+      margin: 100px auto 41px auto;
+      font: bold 48px/50px $mainFont;
+    }
+    &__bottom-text {
+      margin-top: 118px;
+    }
+  }
+}

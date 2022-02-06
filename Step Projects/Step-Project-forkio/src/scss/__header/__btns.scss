@@ -1,0 +1,44 @@
+.btns {
+  color: #ffffff;
+  background-color: $accentColor;
+  border: none;
+  border-radius: 40px;
+  @include span-centerCap;
+  &:hover {
+    background-color: #ffffff;
+    color: #8d81ac;
+    border: 1px solid $accentColor;
+  }
+  &_small-btn {
+    height: 37px;
+    width: 120px;
+    font: bold 15px/15px $mainFont;
+  }
+  &_wide-btn {
+    width: 290px;
+    height: 45px;
+    font: bold 18px/20px $mainFont;
+    &:hover {
+      border: 2px solid $accentColor;
+    }
+  }
+  @media (min-width: $tabletMinWidth) {
+    &_small-btn {
+      width: 145px;
+      font: bold 16px/16px $mainFont;
+    }
+    &_wide-btn {
+      width: 390px;
+      height: 62px;
+      font: bold 21px/23px $mainFont;
+    }
+  }
+  @media (min-width: $desctopMinWidth) {
+    &_small-btn {
+      font: bold 16px/17px $mainFont;
+    }
+    &_wide-btn {
+      font: bold 21px/22px $mainFont;
+    }
+  }
+}

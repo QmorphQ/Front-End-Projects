@@ -1,0 +1,7 @@
+.top-container {
+  @include flex-box(row, space-between, center);
+  background-color: #27262a;
+  @media (min-width: $desctopMinWidth) {
+    background-color: transparent;
+  }
+}
