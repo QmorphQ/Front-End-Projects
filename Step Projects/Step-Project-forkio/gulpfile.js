@@ -71,7 +71,7 @@ function createCSS() {
 //--------------------------------------------
 //Clean:
 function cleanDist() {
-  return src(path.clean, { read: false }).pipe(clean());
+  return src(path.clean, { read: false, allowEmpty: true }).pipe(clean());
 }
 //--------------------------------------------
 //Scripts (gulp-concat, gulp-uglify):

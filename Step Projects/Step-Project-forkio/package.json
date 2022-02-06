@@ -21,7 +21,9 @@
     "sass": "^1.41.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp dev",
+    "build": "gulp build"
   },
   "author": "Makovskij V.P., alectorkinga@gmail.com",
   "license": "ISC"
