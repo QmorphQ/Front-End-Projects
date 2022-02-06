@@ -13,5 +13,5 @@ My codewars profile</a>
 
 <a href='https://www.freecodecamp.org/certification/fcc29053449-69ef-4265-b994-7857eafd1e9d/javascript-algorithms-and-data-structures' target='blank'><img src='/source/images/freecodecamp.jpg' width='50px' alt='freecodecamp image'>
 JavaScript Algorithms and Data Structures Certification</a>
-### Links of deployments to view my work:
-- [The Hum](https://ham-chi.vercel.app/)
+### Links of deployments to view some of my work:
+- [The Hum (HTML, CSS)](https://ham-chi.vercel.app/)
