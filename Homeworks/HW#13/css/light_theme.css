@@ -1,0 +1,230 @@
+/* Основная разметка */
+body {
+  box-sizing: border-box;
+  background-image: url(../img/background_light.jpg);
+  background-size: cover;
+}
+.body-container {
+  width: 1030px;
+  font-family: "Roboto", sans-serif;
+  margin: 46px auto 84px;
+}
+/*Header*/
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+/*Лого*/
+.logo {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  background-image: url(../img/logo/logo\ 3.png);
+  background-repeat: no-repeat;
+  background-size: 53px 47px;
+}
+.logo:hover {
+  color: rgb(26, 133, 26);
+  background-image: url(../img/logo/logo\ 4.png);
+  background-repeat: no-repeat;
+  background-size: 53px 47px;
+}
+.logo-text {
+  display: inline-block;
+  width: 100px;
+  margin-left: 63px;
+}
+.milan {
+  text-transform: uppercase;
+  font-size: 29px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.holidays {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+}
+/*Contacts*/
+.contacts-container {
+  width: 220px;
+  text-align: right;
+}
+.contacts-container__links {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+.contacts-container__links:last-child {
+  padding-top: 19px;
+}
+.contacts-container__links:hover {
+  color: rgb(26, 133, 26);
+}
+/*Tours Section*/
+.section__tour-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__tour-options--name {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 37px;
+}
+.image-container {
+  width: 300px;
+  height: 220px;
+  position: relative;
+}
+.link-photo {
+  text-decoration: none;
+  color: black;
+}
+/*Popup-bar*/
+.image-container__popup-bar {
+  width: 298px;
+  height: 55px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(26, 133, 26);
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  bottom: -55px;
+  left: 5px;
+  transition: bottom 0.3s ease-out;
+}
+.link-photo:hover .image-container__popup-bar {
+  opacity: 1;
+  bottom: -1px;
+}
+.popup-bar__price-part {
+  display: flex;
+  flex-direction: column;
+}
+.popup-bar__from {
+  font-size: 10px;
+  font-weight: 400;
+  padding-top: 7px;
+  padding-left: 16px;
+}
+.popup-bar__€50 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+.popup-bar__view {
+  font-weight: 14px;
+  font-weight: 400;
+  align-self: flex-end;
+  padding-bottom: 12px;
+  padding-right: 14px;
+}
+.popup-bar__view::after {
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f105";
+  padding-left: 16px;
+}
+.tour-options--photo {
+  width: 300px;
+  height: 220px;
+  object-fit: fill;
+  border: 3px solid #fff;
+  border-image: linear-gradient(
+    to right top,
+    rgb(111, 201, 253),
+    rgb(248, 245, 72),
+    rgb(167, 176, 253)
+  );
+  border-image-slice: 1 fill;
+}
+/*Footer*/
+.footer {
+  margin-top: 13px;
+}
+.link-photo:hover {
+  color: rgb(26, 133, 26);
+}
+
+.footer__copyright {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
+
+/*Switcher*/
+
+.inputs_container {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 65px;
+  height: 40px;
+  position: relative;
+}
+
+.radio > input {
+  display: none;
+}
+.radio {
+  padding-top: 2px;
+  display: inline-block;
+  font-weight: 700;
+  padding-left: 25px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.inputs_container::before {
+  position: absolute;
+  z-index: -1;
+  left: 9.6px;
+  top: -11px;
+  content: "";
+  display: block;
+  height: 60px;
+  border-right: rgb(3, 0, 0) 7px solid;
+  border-radius: 5px;
+}
+
+.point_area {
+  position: absolute;
+  left: 5px;
+  top: 1.5px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: rgb(255, 254, 254);
+  border: rgb(0, 0, 0) 2px solid;
+  border-radius: 50%;
+}
+
+.point_area-top {
+  top: 21px;
+}
+.radio input:checked + div {
+  background-color: rgb(255, 254, 254);
+}
+.radio input:checked + div::before {
+  position: absolute;
+  left: 3.5px;
+  top: 3.5px;
+  content: "";
+  background-color: rgb(0, 0, 0);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+/*----------*/

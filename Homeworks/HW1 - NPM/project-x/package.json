@@ -1,0 +1,28 @@
+{
+  "name": "project-x",
+  "version": "1.0.0",
+  "description": "First NPM project",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/alectorkinga/homeworks/-/tree/master/HW1%20-%20NPM/project-x"
+  },
+  "author": "Makovskij Vladislav <alectorkinga@gmail.com>",
+  "first name": "Vladislav",
+  "second name": "Makovskij",
+  "group": "fe_32",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "eslint": "^7.32.0",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "moment": "^2.29.1"
+  }
+}

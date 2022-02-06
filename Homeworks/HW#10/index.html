@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HW#10</title>
+
+</head>
+
+<body>
+    <form class="password-form" action="#" type="POST">
+        <label class="input-wrapper">
+            Ввести пароль
+            <input type="password" class="js-input_password" name="input_password" />
+            <i class="fas fa-eye-slash icon-password eye_btn" id="eye_input"></i>
+
+        </label>
+        <label class="input-wrapper">
+            Подтвердить пароль
+            <input type="password" class="js-input_confirm" name="input_confirm" />
+            <i class="fas fa-eye-slash icon-password eye_btn" id="eye_confirm"></i>
+            <span class="alert_window">Нужно ввести одинаковые значения</span>
+        </label>
+
+        <button type="submit" class="btn">Подтвердить</button>
+    </form>
+</body>
+<script src="js/js.js" defer></script>
+
+</html>

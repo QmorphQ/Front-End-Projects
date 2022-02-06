@@ -1,0 +1,14 @@
+.par1 {
+border: black solid 1px;
+margin-bottom: 20px;
+width: 300px;
+h
+}
+.par2 {
+border: red solid 1px;    
+margin-top: 30px;
+}
+a {
+    display: inline;
+    height: 100px;
+}

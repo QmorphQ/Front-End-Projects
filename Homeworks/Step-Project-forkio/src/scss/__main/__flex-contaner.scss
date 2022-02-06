@@ -1,0 +1,21 @@
+.flex-container {
+  @include flex-box (center, center);
+  &__item {
+    @include flex-box (column, center, center);
+    align-self: baseline;
+    font: italic bold 16px/24px $offFont;
+    color: #ffffff;
+    width: 280px;
+    margin-top: 45px;
+  }
+  &__text {
+    text-align: center;
+    margin-top: 30px;
+  }
+  @media (min-width: $tabletMinWidth) {
+    justify-content: space-around;
+    &__item {
+      width: 350px;
+    }
+  }
+}

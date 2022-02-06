@@ -1,0 +1,10 @@
+.inline-svg-icon{
+    fill: #fff;
+}
+.inline-svg-icon{
+    width: 24px;
+    height: 24px;
+}
+.inline-svg-icon:hover{
+    fill: #01813F;
+}

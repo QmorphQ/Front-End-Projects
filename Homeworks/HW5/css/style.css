@@ -1,0 +1,159 @@
+/* Основная разметка */
+body{
+    box-sizing: border-box;
+    background-image: url(../img/background.png);
+    background-size: cover;
+}
+.body-container{
+    width: 1030px;
+    font-family: 'Roboto', sans-serif;
+    margin: 46px auto 84px;
+}
+/*Header*/
+.top-container{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 17px;
+}
+/*Лого*/
+.logo{
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-image: url(../img/logo/logo\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+}
+.logo:hover{
+color: #F26522;
+background-image: url(../img/logo/logo\ 2.png);
+}
+.logo-text{
+    display: inline-block;
+    width: 100px;
+    margin-left: 63px;
+}
+.milan{
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+.holidays{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+/*Contacts*/
+.contacts-container{
+    width: 220px;
+    text-align: right;
+}
+.contacts-container__links{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.contacts-container__links:last-child{
+padding-top: 19px;
+}
+.contacts-container__links:hover{
+    color: #F26522;
+}
+/*Tours Section*/
+.section__tour-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.section__tour-options--name{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 37px;
+}
+.image-container{
+    width: 300px;
+    height: 220px;
+    position: relative;
+}
+.link-photo{
+    text-decoration: none;
+    color: #fff;
+}
+/*Popup-bar*/
+.image-container__popup-bar{
+    width: 298px;
+    height: 55px;
+    color: #fff;
+    background-color: #F26522;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    bottom: -55px;
+    left: 5px;
+    transition: bottom 0.3s ease-out ;
+}
+.link-photo:hover .image-container__popup-bar{
+    opacity: 1;
+    bottom: -1px;
+}
+.popup-bar__price-part{
+    display: flex;
+    flex-direction: column;
+}
+.popup-bar__from{
+    font-size: 10px;
+    font-weight: 400;
+    padding-top: 7px;
+    padding-left: 16px;
+}
+.popup-bar__€50{
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+.popup-bar__view{
+    font-weight: 14px;
+    font-weight: 400;
+    align-self: flex-end;
+    padding-bottom: 12px;
+    padding-right: 14px;
+}   
+.popup-bar__view::after{
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    content: '\f105';
+    padding-left: 16px;
+}
+.tour-options--photo{
+    width: 300px;
+    height: 220px;
+    object-fit:fill;
+    border: 3px solid #fff;
+    border-image: linear-gradient(to right top, #000, #fff, #000);
+    border-image-slice: 1 fill; 
+}
+/*Footer*/
+.footer{
+    margin-top: 13px;
+}
+.link-photo:hover{
+    color: #F26522;
+}
+
+.footer__copyright{
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}

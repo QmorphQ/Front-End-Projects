@@ -1,0 +1,12 @@
+Локально:
+	git branch -d branch_name //удаление после мерджа;
+	git branch -D branch_name //принудительно;
+Удаленно:
+	git push origin --delete branch_name;
+Сравнить ветки:
+git diff <local branch> <remote>/<remote branch>
+Например git diff master origin/master;
+https://mui.com/guides/routing/#link
+Запулить удаленную ветку локально:
+git fetch origin
+git checkout -b <название ветки> origin/<название ветки>

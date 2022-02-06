@@ -1,0 +1,36 @@
+.body{
+background-color: aquamarine;
+color: green;
+}
+.root{
+width: 1000px;
+height: auto;
+margin: 3% auto auto auto;
+background-color: rgb(203, 233, 154);
+border: 3px solid black;
+border-radius: 20px;
+}
+.btn{
+font: bold 2em/2em sans-serif;
+display: block;
+width: 200px;
+height: 100px;
+border-radius: 20px;
+margin: 5% auto auto auto;
+}
+@keyframes spin {
+    100% {
+     transform: rotate(360deg);
+    }
+  }
+.spinner {
+margin: auto;
+width: 10px;
+height: 10px;
+border: 6px solid #000;
+border-left-color: #333;
+border-right-color: transparent;
+border-bottom-color: #555;
+border-radius: 100%;
+animation: spin 600ms infinite linear;
+}

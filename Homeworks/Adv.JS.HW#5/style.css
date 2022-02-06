@@ -1,0 +1,31 @@
+.body{
+    background-color: aqua;
+}
+.container{
+    margin: auto;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 10% auto;
+}
+.btn{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(50, 231, 65);
+    border-radius: 30px;
+    font: bold 1em/1em sans-serif;
+}
+.alert-window{
+    border: 10px solid red;
+    border-style: double;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    word-wrap: break-word;
+    padding: 1em;
+    font: bold 1em/1em sans-serif;
+}

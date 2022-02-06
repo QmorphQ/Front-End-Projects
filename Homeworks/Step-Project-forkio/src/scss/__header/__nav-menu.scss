@@ -1,0 +1,65 @@
+.nav-menu {
+  display: none;
+  background-color: #333333;
+  width: 100% - 8;
+  &__item {
+    border-bottom: 1px solid rgb(77, 77, 77);
+    position: relative;
+    padding: 30px 0 21px 35px;
+    display: block;
+    color: #ffffff;
+    font: normal 26px/26px $mainFont;
+    text-transform: capitalize;
+    cursor: pointer;
+    &:hover {
+      color: $accentColor;
+      padding-left: 39px;
+      &::before {
+        content: " ";
+        position: absolute;
+        width: 8px;
+        height: 53px;
+        background-color: $accentColor;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  @media (min-width: $tabletMinWidth) {
+    @include flex-box (center, center);
+    background: transparent;
+    &__list {
+      margin: 0 10px 15px 10px;
+      width: 100% - 9;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      border-bottom: none;
+      color: $accentColor;
+      position: static;
+      padding: 0;
+      font: bold 16px/18px $mainFont;
+      text-transform: capitalize;
+      &:hover {
+        color: $sideColor;
+        padding-left: 0px;
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  @media (min-width: $desctopMinWidth) {
+    width: 50%;
+    
+    &__list {
+      transform: translateY(10px);
+      width: 100%;
+    }
+    &__item {
+      font: bold 16px/15px $mainFont;
+    }
+  }
+}

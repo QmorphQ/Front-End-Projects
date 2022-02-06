@@ -1,0 +1,35 @@
+.menu-item{
+    
+    &__menu-option{
+        border: 2px solid royalblue;
+        border-radius: 5px;
+        width: 100px;
+        text-align: center;
+        padding: 4px;
+        color: royalblue;
+        font: bold 14px/16px sans-serif;
+        display: block;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        &:hover{
+            color: #fff;
+            background-color: royalblue;
+        }
+        &__active{
+            color: rgb(255, 255, 255);
+            background-color: rgb(27, 87, 136);
+        }
+    }
+    &__menu-option-active{
+        border: 2px solid royalblue;
+        border-radius: 5px;
+        width: 100px;
+        text-align: center;
+        padding: 4px;
+        color: rgb(255, 255, 255);
+        font: bold 14px/16px sans-serif;
+        display: block;
+        background-color: rgb(27, 87, 136);
+        text-decoration: none;
+    }
+}

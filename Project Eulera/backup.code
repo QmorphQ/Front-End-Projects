@@ -1,0 +1,37 @@
+// const sums = (n, startNum = 1) => {
+//   //++++++
+//   const isItPrime = (num) => {
+//     let result = true;
+//     for (let i = 2; i < num; i++) {
+//       if (num % i === 0) {
+//         return false;
+//       } else continue;
+//     }
+//     return result;
+//   };
+//   //++++++
+//   const getSumOfAllPrimesBelow = (
+//     num,
+//     testIsNumberPrime = () => "?",
+//     start
+//   ) => {
+//     if (start >= num) {
+//       return 0;
+//     }
+//     let result = {
+//       value: 0,
+//       arr: [],
+//     };
+//     for (let i = start; i < num; i += 1) {
+//       if (i === 1 || !testIsNumberPrime(i)) {
+//         continue;
+//       } else {
+//         result.value += i;
+//         result.arr = [...result.arr, i];
+//       }
+//     }
+//     return result;
+//   };
+//   //++++++
+//   return (console.log(store), getSumOfAllPrimesBelow(n, isItPrime, startNum));
+// };

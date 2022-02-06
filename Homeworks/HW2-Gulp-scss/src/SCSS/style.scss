@@ -1,0 +1,21 @@
+@import "__reset";
+@import "__mixin";
+@import "__vars";
+@import "__fonts";
+@import "__header";
+@import "__btn";
+@import "__main";
+@import "__footer";
+
+.body {
+  background-color: $body-color;
+  min-width: 320px;
+}
+
+.content-wrapper {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  width: 100% - 20;
+  margin: auto;
+}
+

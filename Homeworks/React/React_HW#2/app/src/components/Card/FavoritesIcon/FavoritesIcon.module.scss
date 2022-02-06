@@ -1,0 +1,20 @@
+.favorites {
+  width: 20px;
+  height: 20px;
+  border: 1px solid teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.default {
+  stroke: rgb(2, 2, 2);
+  fill: white;
+}
+.favorited {
+  stroke: rgb(2, 2, 2);
+  fill: rgb(255, 81, 0);
+}
+.favorites_star:hover{
+    stroke: rgb(2, 2, 2);
+    fill: rgb(196, 214, 31);
+}

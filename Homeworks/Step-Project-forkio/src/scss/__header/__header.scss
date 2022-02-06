@@ -1,0 +1,75 @@
+@import "../__vars";
+@import "../__mixin";
+@import "__nav-menu";
+@import "__hamburger-btn";
+@import "__btns";
+@import "__logo";
+@import "__top-container";
+@import "__main-container";
+@import "__bottom-container";
+
+.header {
+  background-image: url(/dist/img/header-img.png);
+  height: 718px;
+  background-color: transparent;
+  background-size: 1380px 800px;
+  background-repeat: no-repeat;
+  background-position: top 50% right 50%;
+  &__top-container {
+    position: relative;
+  }
+  &__logo {
+    margin: 30px 0 30px 15px;
+    margin-left: 15px;
+  }
+  &__hamburger-btn {
+    margin-right: 15px;
+  }
+  &__nav-menu {
+    position: absolute;
+    z-index: 1;
+    top: 101px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__main-container {
+    height: 614px;
+  }
+  @media (min-width: $tabletMinWidth) {
+    background-position: top 50% right 50%;
+    height: 100%;
+    &__top-container {
+      height: 118px;
+    }
+    &__logo {
+      margin-bottom: 65px;
+    }
+    &__hamburger-btn {
+      display: none;
+    }
+    &__top-btn {
+      margin-right: 20px;
+      margin-bottom: 35px;
+    }
+    &__nav-menu {
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translate(-50%, -100%);
+    }
+  }
+  @media (min-width: $desctopMinWidth) {
+    &__nav-menu {
+      left: 26%;
+      top: 3%;
+      transform: translate(0, 34px);
+    }
+    &__logo {
+      margin-top: 30px;
+      margin-left: 90px;
+    }
+    &__top-btn {
+      margin: 30px 90px 55px auto;
+    }
+  }
+}

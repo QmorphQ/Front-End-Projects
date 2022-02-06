@@ -1,0 +1,42 @@
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.centered-content {
+  height: 50vh;
+  width: 70vw;
+  margin: auto ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+}
+.tabs-content>li {
+    font-size:2em;
+    font-style: italic;
+    
+}
+
+.tabs-title {
+  padding: 20px;
+  background-color: #23201d;
+  color: #937341;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #937341;
+  color: #23201d;
+}
+.list_content-remove {
+display: none;
+}
+
+.show_on_page {
+  display: block;
+}

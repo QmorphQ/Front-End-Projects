@@ -1,0 +1,23 @@
+.bottom-container {
+  &__text {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: block;
+    font: normal 14px/14px $mainFont;
+    color: #848e97;
+    @include span-centerCap;
+    margin: 35.5px auto 0 auto;
+  }
+  @media (min-width: $tabletMinWidth) {
+    &__text {
+      line-height: 16px;
+      margin-top: 44.5px;
+    }
+  }
+  @media (min-width: $desctopMinWidth) {
+    &__text {
+      line-height: 15px;
+    }
+  }
+}

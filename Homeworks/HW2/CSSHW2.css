@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(Fonts/Montserrat/Montserrat-Light.ttf);
+  font-display: swap;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.navmenu {
+  height: 78px;
+  display: flex;
+  vertical-align: middle;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff0000;
+}
+.hand-img {
+  width: 100%;
+  height: auto;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26, 82px;
+  letter-spacing: 3, 3px;
+  margin-top: 49px;
+  margin-bottom: 38px;
+  text-align: center;
+}
+.paragraph1,
+.paragraph2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 2, 4px;
+  padding-left: 67.5px;
+  padding-right: 67.5px;
+}
+.paragraph1 {
+  margin-bottom: 28px;
+}
+.paragraph2 {
+  margin-bottom: 66px;
+}
+.bot-button {
+  display: inline-block;
+  width: 191px;
+  height: 51px;
+  background-color: #ff0000;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+.bottom {
+  height: 108px;
+  text-align: right;
+  padding-right: 105px;
+  padding-top: 82px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}

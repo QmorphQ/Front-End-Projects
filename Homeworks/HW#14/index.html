@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/db2789a967.css">
+    <link rel="stylesheet" href="css/css reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <title>HW4</title>
+</head>
+<body>
+    <a id="surf_back-btn" href="#top_nav_menu">Back</a>
+    <header class="header">
+        <nav class="surf_nav_menu" id="top_nav_menu"><ul class="surf_list">
+            <li class="surf_item"><a href="#most_popular_posts" class="surf_link">most popular posts</a></li>
+            <li class="surf_item"><a href="#popular_clients" class="surf_link">our most popular clients</a></li>
+            <li class="surf_item"><a href="#top_rated" class="surf_link">top rated</a></li>
+            <li class="surf_item"><a href="#hot_news" class="surf_link">hot news</a></li>
+        </ul></nav>
+        <nav class="top-menu-cantainer">
+            <a class="top-logo-link" href="#">
+                <img src="img/logo/logo-img 1.png" alt="logo" class="top-logo__img">
+                <h2 class="top-logo__text">Architect</h2>
+            </a>
+            <ul class="nav-menu">
+                <li><a class="nav-menu-item" href="#">Home </a></li>
+                <li><a class="nav-menu-item" href="#">Architecture design</a></li>
+                <li><a class="nav-menu-item" href="#">Strange Buildings</a></li>
+                <li><a class="nav-menu-item" href="#">MAGAZINE</a></li>
+                <li><a class="nav-menu-item" href="#">BLOG</a></li>
+                <li><a class="nav-menu-item" href="#">NEWS</a></li>
+            </ul>
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </nav>
+        
+        <div class="top-background-container">
+           
+            <h2 class="title main-title">THE LATEST NEWS ON DESIGN & ARCHITECTURE</h2>
+            <div class="button-container">
+                <form action="https://ru.wikipedia.org/wiki/JavaScript">
+                    <button class="btn btn__sub">Subscribe Now</button>
+                </form>
+                <form action="https://ru.wikipedia.org/wiki/CSS">
+                    <button class="btn btn__best">Best Articles</button>
+                </form>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="section__most-popular-posts">
+            <h2 class="title section__most-popular-posts__title"><a id="most_popular_posts"></a>  Most popular posts</h2>
+            <div class="popular-posts__container">
+                <div class="popular-posts__item">
+                    <img src="img/Vanglo House By LWPAC.png" alt="Vanglo House By LWPAC">
+                    <p class="popular-posts-item__text">Vanglo House By LWPAC in Canada</p>
+                </div>
+                <div class="popular-posts-item">
+                    <img src="img/Royal Blossom Hotel & Spa.png" alt="Royal Blossom Hotel & Spa">
+                    <p class="popular-posts-item__text">Royal Blossom Hotel & Spa in USA</p>
+                </div>
+                <div class="popular-posts-item">
+                    <img src="img/Sunrise Expanse Hotel.png" alt="Sunrise Expanse Hotel">
+                    <p class="popular-posts-item__text">Sunrise Expanse Hotel in USA</p>
+                </div>
+                <div class="popular-posts-item">
+                    <img src="img/Sunset Shack Hotel.png" alt="Sunset Shack Hotel">
+                    <p class="popular-posts-item__text">Sunset Shack Hotel in Spain</p>
+                </div>
+                <div class="popular-posts-item">
+                    <img src="img/Stargaze Resort & Spa.png" alt="Stargaze Resort & Spa">
+                    <p class="popular-posts-item__text">Stargaze Resort & Spa in USA</p>
+                </div>
+                <div class="popular-posts-item">
+                    <img src="img/Glorious Expanse Hotel.png" alt="Glorious Expanse Hotel">
+                    <p class="popular-posts-item__text">Glorious Expanse Hotel in France</p>
+                </div>
+            </div>
+        </section>
+        <button id="hide_btn">hide</button>
+        <section class="section__popular-clients">
+            <div class="popular-clients__background">
+                <h2 class="title popular-clients__title"><a id="popular_clients"></a> our most popular clients</h2>
+                <div class="popular-clients__container">
+                    <img class="post popular-clients__img" src="img/National Post.png" alt="National Post">
+                    <img class="dryme popular-clients__img" src="img/Dryme.png" alt="Dryme">
+                    <img class="house-home popular-clients__img" src="img/House&Home.png" alt="House-Home">
+                    <img class="journey popular-clients__img" src="img/Journey.png" alt="Journey">
+                </div>
+            </div>
+        </section>
+        <section class="section__top-rated">
+            <h2 class="title top-rated__title"><a id="top_rated"></a> Top rated</h2>
+            <div class="photo-track">
+                <img class="photo-track__img" src="img/Kids-Store-Lighting-2.png" alt="Kids-Store-Lighting-2">
+                <img class="photo-track__img" src="img/Kids-Store-Lighting-1.png" alt="Kids-Store-Lighting-1">
+                <img class="photo-track__img" src="img/Kids-Store-Lighting-1.png" alt="Kids-Store-Lighting-1">
+                <img class="photo-track__img" src="img/Pools.png" alt="Pools">
+                <img class="photo-track__img" src="img/Hourses.png" alt="Hourses">
+                <img class="photo-track__img" src="img/billionares.png" alt="billionares">
+                <img class="photo-track__img" src="img/Brazil-staduims.png" alt="Brazil-staduims">
+            </div>
+        </section>
+        <section class="section__hot-news">
+            <h2 class="title hot-news__title"><a id="hot_news"></a> hot news</h2>
+            <div class="hot-news__container">
+                <div class="hot-news__container__item prophecy">
+                    <img class="hot-news__img__float-left" src="img/Prophecy Hotel.png" alt="Prophecy Hotel">
+                    <h3 class="hot-news__item__title hot-news__title__right ">Prophecy Hotel & Spa in Emirate</h3>
+                    <p class="hot-news__text__right">
+                        Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder filled with rocks,
+                        concrete, or
+                        sometimes sand and soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for
+                        Outdoors A Gabion is a cage box or cylinder filled with rocks, concrete, or sometimes sand and
+                        soil
+                        and
+                        It is a great way to decorate your outdoor
+                    </p>
+                </div>
+                <div class="hot-news__container__item nebula">
+                    <img src="img/Nebula Hotel.png" alt="Nebula Hotel">
+                    <h3 class="hot-news__item__title hot-news__title__center">Nebula Hotel in Spain</h3>
+                </div>
+                <div class="hot-news__container__item western">
+                    <img src="img/Western Pyramid.png" alt="Western Pyramid">
+                    <h3 class="hot-news__item__title hot-news__title__under-img">Western Pyramid Resort in Egypt</h3>
+
+                    <p class="hot-news__text">Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder filled with rocks, concrete,
+                        or
+                        sometimes sand and soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for
+                        Outdoors A Gabion is a cage box or cylinder filled with rocks, concrete, or sometimes sand and
+                        soil
+                        and
+                        It is a great way to decorate your outdoor</p>
+                </div>
+                <div class="hot-news__container__item grand">
+                    <img src="img/Grand Meadows.png" alt="Grand Meadows">
+                    <h3 class="hot-news__item__title hot-news__title__under-img">Grand Meadows Resort in Maldives</h3>
+
+                    <p class="hot-news__text">Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder filled with rocks, concrete,
+                        or
+                        sometimes sand and soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for
+                        Outdoors A Gabion is a cage box or cylinder filled with rocks, concrete, or sometimes sand and
+                        soil
+                        and
+                        It is a great way to decorate your outdoor</p>
+                </div>
+                <div class="hot-news__container__item wander">
+                    <img src="img/Wanderlust Resort.png" alt="Wanderlust Resort">
+                    <h3 class="hot-news__item__title hot-news__title__under-img">Wanderlust Resort in Tenerife</h3>
+
+                    <p class="hot-news__text">Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder filled with rocks, concrete,
+                        or
+                        sometimes sand and soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for
+                        Outdoors A Gabion is a cage box or cylinder filled with rocks, concrete, or sometimes sand and
+                        soil
+                        and
+                        It is a great way to decorate your outdoor</p>
+                </div>
+                <div class="hot-news__container__item twin">
+                    <img src="img/Twin Sanctuary Hotel.png" alt="Twin Sanctuary Hotel">
+                    <h3 class="hot-news__item__title hot-news__title__under-img">Twin Sanctuary Hotel in Great Britain</h3>
+
+                    <p class="hot-news__text">Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder filled with rocks, concrete,
+                        or
+                        sometimes sand and soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for
+                        Outdoors A Gabion is a cage box or cylinder filled with rocks, concrete, or sometimes sand and
+                        soil
+                        and
+                        It is a great way to decorate your outdoor</p>
+                </div>
+                <div class="hot-news__container__item prism">
+                    <img src="img/Prism Hotel.png" alt="Prism Hotel">
+                    <h3 class="hot-news__item__title hot-news__title__center">Prism Hotel in Ireland</h3>
+                </div>
+                <div class="hot-news__container__item kings">
+                    <img class="hot-news__img__float-left" src="img/King's Shroud Resort.png" alt="King's Shroud Resort">
+                    <h3 class="hot-news__item__title hot-news__title__right">King's Shroud Resort in Spain</h3>
+
+                    <p class="hot-news__text__right">Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder filled with rocks, concrete,
+                        or
+                        sometimes sand and soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for
+                        Outdoors A Gabion is a cage box or cylinder filled with rocks, concrete, or sometimes sand and
+                        soil
+                        and
+                        It is a great way to decorate your outdoor</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text"> All Rights Reserved © 2014 architect.com - Interior Design & Architecture Magazine</p>
+        <a class="footer__logo" href="#">
+            <img src="img/logo/Vector Smart Object copy 3.png" alt="">
+            <img class="second-logo-part" src="img/logo/Vector Smart Object.png" alt="">
+        </a>
+    </footer>
+</body>
+    <SCript src="JS/js.js"></SCript>
+</html>

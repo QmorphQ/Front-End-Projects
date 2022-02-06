@@ -1,0 +1,142 @@
+html{
+    
+}
+.body {
+	background-image: url(../img/background/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 90vh;
+	min-width: 320px;
+}
+.container{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 320px;
+    max-width: 480px;
+    margin: auto;
+    border: 1px black solid;
+    background-color: white;
+}
+.header{
+    position: fixed;
+    top: -3px;
+    z-index: 999;
+    border: 3px rgba(0, 127, 177, 0.596) solid;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 320px;
+    max-width: 474px;
+    background-color: rgb(182, 215, 228);
+    border-radius: 0 0 20px 20px;
+
+}
+.logo{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 5px rgb(79, 145, 221) solid;
+border-style: double;
+border-radius: 50px;
+min-width: 130px;
+height: 50px;
+margin-left: 5%;
+}
+.logo__img{
+    min-width: 3em;
+    min-height: 3em;
+    background-color: transparent;
+    background-image: url(../img/favicon/logo_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo__text{
+    color: rgb(47, 138, 212);
+    font: bold 1.2em/1em sans-serif;
+    margin: auto;
+}
+#clock{
+    width: 100px;
+    height: 30px;
+    border: 3px rgb(47, 138, 212) solid;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: italic bold 1.1em/1em sans-serif;
+    color: rgb(47, 138, 212);
+}
+.header__btn{
+    width: 30%;
+    height: 30%;
+    border: 4px rgba(255, 255, 255, 0.897) solid;
+    border-radius: 20px;
+    border-style: double;
+    color: #fff;
+    background-color: rgb(47, 138, 212);
+    font: bold 1em/1em sans-serif;
+    align-self: flex-end;
+    margin:   0 4% 2% 0;
+}
+.header__btn:hover{
+    border: 2px solid rgb(6, 113, 253);
+    color: rgb(47, 138, 212);
+    background-color: #fff;
+    cursor: pointer;
+}
+.main{
+    border: 1px solid black;
+    margin-top: 35%;
+}
+.card{
+    border-radius: 20px;
+    border: 4px solid rgb(18, 152, 156);
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 5%;
+    position: relative;
+}
+.card__header{
+    border: 1px black solid;
+}
+.card__title{
+    border: 1px black solid;
+    overflow: hidden;
+}
+.card__delete{
+    cursor: pointer;
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    background-color: transparent;
+    background-image: url(../img/icons/delete_2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1.2em;
+    height: 1.2em;
+}
+.card__main{
+    border: 1px black solid;
+}
+.card__text{
+    border: 1px black solid;
+}
+.card__footer{
+    border: 1px black solid;
+}
+.card__name{
+    border: 1px black solid;
+}
+.card__email{
+    border: 1px black solid;
+}

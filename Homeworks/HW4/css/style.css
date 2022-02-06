@@ -1,0 +1,299 @@
+/* Общая разметка */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    margin-bottom: 50px;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+}
+/*Контейнер для верхнего навигационного меню*/
+.top-menu-cantainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #313131 ;
+}
+/* Лого */
+.top-logo-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 27px;
+}
+.top-logo__img {
+    margin-right: 27px;
+}
+.top-logo__text{
+    display: inline-block;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+ /*Верхнее навигациооное меню*/
+.nav-menu{
+    display: flex;
+}
+.nav-menu-item {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 26px 36px;
+}
+.nav-menu-item:hover{
+    color: #14B9D5;
+}
+.fa-search {
+    color: #FFFFFF;
+    padding: 26px;
+    background-color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+/*Top section*/
+.top-background-container{
+    height: 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/header.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 -400PX;
+    background-color: #b4adad;
+    background-blend-mode: multiply;
+    padding-top: 10%;
+}
+.main-title{ 
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+/*Кнопки*/
+.button-container{
+    display: flex;
+    margin-bottom: 5% ;
+}
+.btn{
+    border: 0;
+    width: 170px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 16px ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Кнопка1 */
+.btn__sub{
+    background-color: #89CA62;
+}
+/*Кнопка2*/
+.btn__best{
+    background-color: #14B9D5;
+    margin-left: 20px;
+}
+/*основной раздел*/
+.section__most-popular-posts{
+    background-color: #F2F2F2;
+}
+.section__most-popular-posts__title{
+    color: #18B4CF;
+    margin-bottom: 50px;
+}
+.popular-posts__container{ 
+    height: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: #353A3D;
+    font-weight: 700;
+    margin: 0 13% 40px 13%;
+}
+.popular-posts__item{
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.popular-posts-item__text{
+    text-align: center;
+    padding: 20px ;
+    background-color: #FFFFFF;
+}
+/*Нижняя секция с использованием Grid*/
+.popular-clients__background{
+    background-image: url(../img/parallax.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.popular-clients__title{
+    font-size: 32px;
+    color: #FFFFFF;
+    padding-top: 105px;
+}
+.popular-clients__title::after{
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #18B4CF;
+    margin: 87px auto 106px;
+}
+.popular-clients__container{
+    padding-bottom: 190px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4,auto);
+    grid-template-areas: 
+    " post dryme house-home journey ";
+    justify-content: center;
+    align-items:center;
+}
+.popular-clients__img{
+    padding-left: 60px;
+}
+/* Grid зазметка для Popular Clients */
+.post{
+    grid-area: post;
+}
+.dryme{
+    grid-area: dryme;
+    }
+.house-home{
+    grid-area: house-home;
+}
+.journey{
+    grid-area: journey;
+}
+/*Нижняя часть страницы Top Rated*/
+.top-rated__title{
+    background-color: #E5E5E5;
+    padding: 50px ;
+    color: #18B4CF;
+}
+/*Фото-лента*/
+.photo-track{
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+}
+.photo-track__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Section Hot News */
+.section__hot-news{
+    background-color: #FFFFFF;
+}
+.hot-news__title{
+    color: #18B4CF;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*посты в нижней части страницы*/
+.hot-news__container{
+    margin: 0 340px 70px;
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(4,auto);
+    row-gap: 40px;
+    column-gap: 60px;
+    justify-content:center;
+    grid-template-areas: "prophecy prophecy prophecy nebula" 
+    "western western grand grand"
+    "wander wander twin twin"
+    "prism kings kings kings";
+}
+/*Грид разметка*/
+    .prophecy{
+    grid-area: prophecy;
+    }
+    .nebula{
+    grid-area: nebula;
+    }
+    .western{
+    grid-area: western;
+    }
+    .grand{
+    grid-area: grand;
+    }
+    .wander{
+    grid-area: wander;
+    }
+    .twin{
+    grid-area: twin;
+    }
+    .prism{
+    grid-area: prism;
+    }
+    .kings{
+    grid-area: kings;
+    }
+.hot-news__container__item{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #353A3D;
+    text-align: right;
+    background-color: #F9F7F7;
+}
+.hot-news__item__title{
+    font-size: 18px;
+    font-weight: 700;
+}
+.hot-news__title__right{
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+}
+.hot-news__title__center{
+    text-align: center;
+    padding-top: 12px;
+}
+.hot-news__title__under-img{
+padding-top: 12px;
+padding-right: 27px;
+padding-bottom: 15px;
+}
+/*Верстка элементов*/
+.hot-news__img__float-left{
+    float: left;
+    padding-right: 10px;
+}
+.hot-news__text__right{
+    padding-right: 25px;
+}
+.hot-news__text{
+    padding-right: 20px;
+}
+/*Footer*/
+.footer{
+    background-color: #000;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.footer__text{
+    font-size: 13px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 30px 0;
+    margin-left: 30%;
+}
+.footer__logo{
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+}
