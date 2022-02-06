@@ -7,7 +7,6 @@ All current projects
 - React, React-Redux
 - Gulp, Webpack
 - Other small libraries (Formick, React-Router and etc.)
-<<<<<<< HEAD
 ### Links:
 <a href='https://www.codewars.com/users/qmorphq' target='blank'><img src='/source/images/codewars.jpg' width='50px' alt='codewars image'>
 My codewars profile</a>
