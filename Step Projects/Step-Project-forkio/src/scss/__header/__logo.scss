@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   &__img {
-    background-image: url(/src/img/Logo\ 1.png);
+    background-image: url(../img/logo1.png);
     width: 43px;
     height: 41px;
   }
@@ -17,7 +17,7 @@
   &:hover {
     .logo {
       &__img {
-        background-image: url(/src/img/logo-hover\ 1.png);
+        background-image: url(../img/logo-hover1.png);
       }
       &__text {
         color: $sideColor;

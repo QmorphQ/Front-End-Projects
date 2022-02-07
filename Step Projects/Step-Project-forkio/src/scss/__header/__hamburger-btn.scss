@@ -1,3 +1,4 @@
+@use "sass:math";
 .hamburger-menu {
     width: 26px;
     height: 21px;
@@ -28,8 +29,8 @@
 	transition: bottom 300ms $bar-transition, transform $bar-transition, 300ms $bar-transition, transform $bar-transition;
 }
 .bar:before {
-	width: $bar-width/2;
-	left: $bar-width/2;
+	width: math.div($bar-width, 2);
+	left: math.div($bar-width, 2);
 	bottom: $bar-spacing;
 	
 }
