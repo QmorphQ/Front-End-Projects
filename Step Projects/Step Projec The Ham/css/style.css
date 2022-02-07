@@ -850,8 +850,10 @@
 }
 .grid1 {
   margin: auto;
-  width: 1200px;
+  width: 1235px;
   margin-top: 83px;
+  margin-bottom: 200px;
+  overflow:auto;
 }
 .grid-item {
   width: 380px;
@@ -872,7 +874,15 @@
 /*----------------------------*/
 /*Footer*/
 .footer {
+  position: relative;
   background-color: #22353f;
+}
+.footer>button{
+  position: absolute;
+  left: 50%;
+  top: -100%;
+  z-index: 10;
+  transform: translateX(-50%);
 }
 .footer > p {
   color: #aeaeae;

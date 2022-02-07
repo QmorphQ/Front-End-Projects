@@ -2,17 +2,17 @@
 "use strickt";
 //
 
-$(document).ready(function(event) {
+$(document).ready(function (event) {
   function endLoad() {
     $(".load-more_btn").html(`<img src="img/Forma 1.png">Load More`);
   }
-  $(".load-more_btn").click(event => {
+  $(".load-more_btn").click((event) => {
     $($(".load-more_btn")).html(`<div class="lds-dual-ring"></div>`);
     setTimeout(endLoad, 2000);
   });
   //Section "Our Services"!!!
 
-  $(".tab_option").click(function(event) {
+  $(".tab_option").click(function (event) {
     $(".tab_option-active").removeClass("tab_option-active");
     $(".active_option").removeClass("active_option");
     $(this).addClass("tab_option-active");
@@ -61,7 +61,7 @@ $(document).ready(function(event) {
   //"Add more images" button on click
   let counterBtnClick = 0; //<---Счетчик кликов кнопки "load more"
 
-  btnAddImages.click(function(event) {
+  btnAddImages.click(function (event) {
     setTimeout(() => {
       switch (counterBtnClick) {
         case 0:
@@ -166,7 +166,7 @@ $(document).ready(function(event) {
   $(".slide_content").html(contentForImages.PHILLIPS);
   $(".slider_item:nth-child(2)>img:nth-child(1)").attr("data-checked", "true");
   $(".slider_item>img[data-checked = true]").css({ top: "-20px" });
-  document.querySelector(".slider").addEventListener("click", function(event) {
+  document.querySelector(".slider").addEventListener("click", function (event) {
     if (event.target.tagName == "IMG") {
       //Клонируем "image" для вставки
       let central_image = $(event.target).clone(false);
@@ -183,31 +183,32 @@ $(document).ready(function(event) {
     //Section "Gallery of best images"
     //"Masonry" plugin with JQ
   });
-
   const $grid2 = $(".grid2").masonry({
     itemSelector: ".grid-item2",
-    columnWidth: 3
+    columnWidth: 3,
   });
   const $grid1 = $(".grid1").masonry({
     itemSelector: ".grid-item",
-    columnWidth: 50
+    columnWidth: 50,
   });
-  $grid2.imagesLoaded().done(function() {
-    $grid2.masonry('layout')
+  $grid2.imagesLoaded().done(function () {
+    $grid2.masonry("layout");
   });
-  $grid1.imagesLoaded().done(function() {
-    $grid1.masonry('layout')
+
+  $grid1.imagesLoaded().done(function () {
+    $grid1.masonry("layout");
   });
+
   //Load more images
-  $(".gallery>button").on("click", function() {
-    var $items = $(moreBestImages);
+  $(".footer>button").on("click", function () {
     setTimeout(() => {
       // append items to grid
+      const $items = $(moreBestImages);
       $grid1
         .append($items)
         // add and lay out newly appended items
         .masonry("appended", $items);
-      $(".gallery>button").css("display", "none");
+      $(".footer>button").css("display", "none");
     }, 2000);
   });
 });
