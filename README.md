@@ -8,12 +8,12 @@ All current projects
 - Gulp, Webpack
 - Other small libraries (Formick, React-Router and etc.)
 ### Links:
-<a href='https://www.codewars.com/users/qmorphq' target='_blank'><img src='/source/images/codewars.jpg' width='50px' alt='codewars image'>
+<a href='https://www.codewars.com/users/qmorphq'><img src='/source/images/codewars.jpg' width='50px' alt='codewars image'>
 My codewars profile</a>
 
-<a href='https://www.freecodecamp.org/certification/fcc29053449-69ef-4265-b994-7857eafd1e9d/javascript-algorithms-and-data-structures' target='_blank'><img src='/source/images/freecodecamp.jpg' width='50px' alt='freecodecamp image'>
+<a href='https://www.freecodecamp.org/certification/fcc29053449-69ef-4265-b994-7857eafd1e9d/javascript-algorithms-and-data-structures'><img src='/source/images/freecodecamp.jpg' width='50px' alt='freecodecamp image'>
 JavaScript Algorithms and Data Structures Certification</a>
 ### Deployment links some of my works:
 #### (currently only few works, because have to spend some time for refactoring and deployment, and i can do this only during my free time, will be much more. Rest of my work listed in repository. Rely on your understanding)
-- [The Hum (HTML, CSS)](https://ham-chi.vercel.app/?target=_blank)
-- [Forkio (Gulp, SCSS, Responsive design)](https://forkio-twjlvg40d-qmorphq.vercel.app/?target=_blank)
+- [The Hum (HTML, CSS)](https://ham-chi.vercel.app/)
+- [Forkio (Gulp, SCSS, Responsive design)](https://forkio-twjlvg40d-qmorphq.vercel.app/)
