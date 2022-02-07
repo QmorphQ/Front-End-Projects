@@ -192,15 +192,12 @@ $(document).ready(function(event) {
     itemSelector: ".grid-item",
     columnWidth: 50
   });
-  $grid2.imagesLoaded().progress(function() {
+  $grid2.imagesLoaded().done(function() {
     $grid2.masonry('layout')
   });
-  $grid1.imagesLoaded().progress(function() {
+  $grid1.imagesLoaded().done(function() {
     $grid1.masonry('layout')
   });
-  // var $grid = $(".grid1").masonry({
-  //   columnWidth: 50
-  // });
   //Load more images
   $(".gallery>button").on("click", function() {
     var $items = $(moreBestImages);
