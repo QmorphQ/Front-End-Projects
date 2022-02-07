@@ -63,7 +63,7 @@ function createCSS() {
         cascade: false,
       })
     )
-    
+    .pipe(cleanCSS({ compatibility: "ie8" }))
     .pipe(rename("style/styles.min.css"))
     .pipe(dest(project_folder))
     .pipe(browserSync.stream());
