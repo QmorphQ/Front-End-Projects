@@ -13,7 +13,7 @@ My codewars profile</a>
 
 <a href='https://www.freecodecamp.org/certification/fcc29053449-69ef-4265-b994-7857eafd1e9d/javascript-algorithms-and-data-structures' target='blank'><img src='/source/images/freecodecamp.jpg' width='50px' alt='freecodecamp image'>
 JavaScript Algorithms and Data Structures Certification</a>
-### Links of deployments to view some of my work:
+### Deployment links some of my works:
 #### (currently only few works, because have to spend some time for refactoring and deployment, and i can do this only during my free time, will be much more. Rest of my work listed above. Rely on your understanding)
 - [The Hum (HTML, CSS)](https://ham-chi.vercel.app/)
 - [Forkio (Gulp, SCSS, Responsive design)](https://forkio-twjlvg40d-qmorphq.vercel.app/)
