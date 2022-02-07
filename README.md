@@ -15,5 +15,5 @@ My codewars profile</a>
 JavaScript Algorithms and Data Structures Certification</a>
 ### Deployment links some of my works:
 #### (currently only few works, because have to spend some time for refactoring and deployment, and i can do this only during my free time, will be much more. Rest of my work listed in repository. Rely on your understanding)
-- [The Hum (HTML, CSS)](https://ham-chi.vercel.app/)
-- [Forkio (Gulp, SCSS, Responsive design)](https://forkio-twjlvg40d-qmorphq.vercel.app/)
+- [The Hum (HTML, CSS)](https://ham-chi.vercel.app/?target=_blank)
+- [Forkio (Gulp, SCSS, Responsive design)](https://forkio-twjlvg40d-qmorphq.vercel.app/?target=_blank)
