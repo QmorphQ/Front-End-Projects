@@ -8,6 +8,7 @@
     color: #848e97;
     @include span-centerCap;
     margin: 35.5px auto 0 auto;
+    margin-bottom: 80px;
   }
   @media (min-width: $tabletMinWidth) {
     &__text {

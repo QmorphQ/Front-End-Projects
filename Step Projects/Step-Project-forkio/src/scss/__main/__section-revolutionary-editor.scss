@@ -1,0 +1,58 @@
+.revolutionary-editor {
+  .main-content-container {
+    width: 276px;
+    margin: 0 auto 90px auto;
+    &__main-top {
+      &__title {
+        margin: 27px auto;
+        text-align: center;
+        text-transform: uppercase;
+        color: $darkTextColor;
+        font: 700 26px/28px $mainFont;
+        width: 273px;
+        @include flex-box(column, center, center);
+      }
+      &__paragraph {
+        text-align: center;
+        font: 400 14px/20px $offFont;
+        margin: 0 auto 36px auto;
+      }
+      &__social-counters {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .social-counter__item {
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          border-radius: 3px;
+          display: flex;
+          justify-content: space-between;
+          font: bold 12px/12px $offFont;
+          width: fit-content;
+          height: 30px;
+          margin: 10px auto;
+          &__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 5px;
+            padding-right: 5px;
+            & > svg {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding-left: 5px;
+              padding-right: 5px;
+            }
+          }
+          &__values {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            border-left: 1px solid rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+  }
+}
