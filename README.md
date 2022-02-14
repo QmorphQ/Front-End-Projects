@@ -16,4 +16,4 @@ JavaScript Algorithms and Data Structures Certification</a>
 ### Deployment links some of my works:
 #### (Currently only few works. Have to spend some time for refactoring and deployment and I can do this only during my free time. Will be much more. Rest of my work listed in repository. Rely on your understanding)
 - [The Hum (HTML, CSS)](https://ham-chi.vercel.app/)
-- [Forkio (Gulp, SCSS, Responsive design)](https://forkio-twjlvg40d-qmorphq.vercel.app/)
+- [Forkio (Gulp, SCSS, Responsive design)](https://forkio-sage.vercel.app/)
