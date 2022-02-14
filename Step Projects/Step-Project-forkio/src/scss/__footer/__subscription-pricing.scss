@@ -1,0 +1,197 @@
+.subscription-pricing {
+  background-color: hsl(282, 14%, 27%);
+  &__content-container {
+    // margin-top: 15px;
+    &__title {
+      width: 300px;
+      margin: auto;
+      padding-top: 15px;
+      font: 700 28px/42px $mainFont;
+      color: #fff;
+      text-align: center;
+      text-transform: capitalize;
+      margin-bottom: 32px;
+    }
+    &__cards-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      &__card {
+        margin: 0 15px 18px 15px;
+        width: 260px;
+        height: 460px;
+        @include flex-box(column, stretch);
+        align-items: stretch;
+        transition: all 0.3s;
+        &__header {
+          background-color: rgba(255, 255, 255, 0.1);
+          @include flex-box();
+          padding: 36px 0;
+          flex-grow: 1;
+          transition: all 0.3s;
+          &__title {
+            font: 400 24px/24px $mainFont;
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+          }
+        }
+        &__body {
+          background-color: rgba(255, 255, 255, 0.06);
+          @include flex-box(column, flex-start);
+          flex-grow: 6;
+          &__price {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font: 400 60px/62px $mainFont;
+            color: #fff;
+            transition: all 0.3s;
+            & > b {
+              font-weight: bold;
+            }
+          }
+          &__per-month {
+            font: 400 14px/16px $mainFont;
+            color: #ffffff;
+            text-transform: uppercase;
+            position: relative;
+            margin-bottom: 73px;
+            &:after {
+              content: "";
+              position: absolute;
+              display: block;
+              @include center-element();
+              bottom: -38px;
+              width: 60px;
+              height: 5px;
+              background-color: $accentColor;
+            }
+          }
+          &__personal {
+            font: 400 16px/18px $mainFont;
+            text-transform: capitalize;
+            text-align: center;
+            color: #ffffff;
+            transition: all 0.3s;
+          }
+          &__purchase {
+            width: 163px;
+            height: 45px;
+            border-radius: 25px;
+            background-color: rgba(255, 255, 255, 0.15);
+            font: 400 15px/15px $mainFont;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin-top: 37px;
+            transition: all 0.3s;
+            color: #ffffff;
+          }
+        }
+        &:hover {
+          background-color: #463048;
+          width: 300px;
+          height: 560px;
+        }
+        &:hover &__body__price {
+          transform: scale(1.3);
+        }
+        &:hover &__body__purchase {
+          width: 190px;
+          height: 52px;
+          margin-top: 110px;
+          font: 400 16px/18px $mainFont;
+        }
+        &:hover &__header {
+          background-color: rgba(0, 0, 0, 0.15);
+        }
+        &:hover &__body__personal {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  @media (min-width: $tabletMinWidth) {
+    background-image: url(../img/footer-tab.png);
+    &__content-container {
+      &__title { 
+        width: auto;
+        padding-top: 88px;
+        font: 700 42px/44px $mainFont;
+      }
+      &__cards-container {
+        &__card {
+          &__header {
+            &__title {
+            }
+          }
+          &__body {
+            &__price {
+              & > b {
+              }
+            }
+            &__per-month {
+              &:after {
+              }
+            }
+            &__personal {
+            }
+            &__purchase {
+            }
+          }
+          &:hover {
+          }
+          &:hover &__body__price {
+          }
+          &:hover &__body__purchase {
+          }
+          &:hover &__header {
+          }
+          &:hover &__body__personal {
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: $desctopMinWidth) {
+    &__content-container {
+      &__title{
+        padding-top: 112px;
+        font: 700 48px/50px $mainFont;
+      }
+      &__cards-container {
+        &__card {
+          &__header {
+            &__title {
+            }
+          }
+          &__body {
+            &__price {
+              & > b {
+              }
+            }
+            &__per-month {
+              &:after {
+              }
+            }
+            &__personal {
+            }
+            &__purchase {
+            }
+          }
+          &:hover {
+          }
+          &:hover &__body__price {
+          }
+          &:hover &__body__purchase {
+          }
+          &:hover &__header {
+          }
+          &:hover &__body__personal {
+          }
+        }
+      }
+    }
+  }
+}
+// background-image: url("../img/footer-tab.png");

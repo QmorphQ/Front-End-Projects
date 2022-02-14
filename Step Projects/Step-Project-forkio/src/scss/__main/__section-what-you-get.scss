@@ -1,20 +1,39 @@
 .what-you-get {
   &__content-container {
-    @include flex-box(column);
-    width: 80%;
+    &__desctop {
+      display: none;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    &__title{
-        text-align: center;
-        font: 700 32px/38px $mainFont;
-        color: $accentColor;
-        width: 230px;
+    &__title {
+      order: 0;
+      text-align: center;
+      font: 700 32px/38px $mainFont;
+      color: $accentColor;
+      width: 230px;
+    }
+    &__items {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     &__item {
-      margin-top: 38px;
-      @include flex-box(column);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin-top: 36px;
+      width: 80%;
       &__img {
         margin-bottom: 27px;
+        width: 17%;
+        display: flex;
+        justify-content: center;
       }
       &__description {
         &__title {
@@ -24,10 +43,83 @@
           font: 400 16px/16px $mainFont;
         }
         &__paragraph {
+          width: 90%;
           text-align: center;
           font: 400 14px/21px $offFont;
-          color: #848E97;
+          color: #848e97;
         }
+      }
+    }
+    &__editor-img {
+      order: 2;
+      justify-self: flex-end;
+      margin-top: 65px;
+      order: 1;
+      align-self: flex-end;
+      width: fit-content;
+      & > picture > img {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+      }
+    }
+  }
+  @media (min-width: $tabletMinWidth) {
+    &__content-container {
+      &__title {
+        font: 700 42px/44px $mainFont;
+        width: auto;
+      }
+      &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        &__img {
+          margin: 0;
+          width: 30%;
+        }
+        &__description {
+          width: 70%;
+          &__title {
+            text-align: left;
+          }
+          &__paragraph {
+            font-family: $offFont;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: $desctopMinWidth) {
+    margin-bottom: 33px;
+    &__content-container {
+      &__tablet {
+        display: none;
+      }
+      &__desctop {
+        display: flex;
+        flex-direction: row;
+      }
+      &__title {
+        margin: 0;
+        text-align: left;
+        font: 700 48px/50px $mainFont;
+      }
+      &__items {
+        flex-grow: 1;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+      }
+      &__item {
+        width: 100%;
+      }
+      &__editor-img {
+        margin: 0;
+        flex-grow: 1;
       }
     }
   }

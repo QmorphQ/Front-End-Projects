@@ -9,10 +9,11 @@
         text-transform: uppercase;
         color: $darkTextColor;
         font: 700 26px/28px $mainFont;
-        width: 273px;
+
         @include flex-box(column, center, center);
       }
       &__paragraph {
+        color: #323232;
         text-align: center;
         font: 400 14px/20px $offFont;
         margin: 0 auto 36px auto;
@@ -51,6 +52,36 @@
             padding: 5px;
             border-left: 1px solid rgba(0, 0, 0, 0.3);
           }
+        }
+      }
+    }
+  }
+  @media (min-width: $tabletMinWidth) {
+    .main-content-container {
+      width: 85%;
+      &__main-top {
+        &__title {
+          font: 700 42px/42px $mainFont;
+        }
+        &__paragraph {
+          font: 400 21px/32px $offFont;
+        }
+        &__social-counters {
+          justify-content: center;
+          width: 365px;
+          margin: auto;
+
+          .social-counter__item {
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: $desctopMinWidth) {
+    .main-content-container {
+      &__main-top {
+        &__title {
+          font: 700 54px/54px $mainFont;
         }
       }
     }
