@@ -1,0 +1,7 @@
+@import url("./__aside-filter/__aside-filter.css");
+.aside{
+    width: auto;
+    border-left: 5px solid var(--main-color);
+    border-right: 5px solid var(--main-color);
+    background-color: var(--off-color);
+}

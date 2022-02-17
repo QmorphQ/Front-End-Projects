@@ -1,0 +1,15 @@
+.desk {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+  background-color: rgb(226, 237, 238);
+ 
+}
+.desk-text{
+  font: bold 3em/2em var(--main-font);
+  color: rgba(18, 200, 246, 0.274);
+  margin-left: 10%;
+  margin-top: 10%;
+  
+  
+}

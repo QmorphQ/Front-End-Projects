@@ -1,0 +1,33 @@
+.modal-content {
+  font-family: var(--main-font);
+  border: 5px solid var(--main-color);
+ width: 75%;
+}
+
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-header, .modal-footer{
+  background-color: var(--off-color);
+}
+
+.modal-body input {
+  border: var(--default-borders);
+  color: var(--main-color);
+  font: 700 1em/1em var(--main-font);
+  margin: 10px;
+  padding: 5px;
+}
+
+.modal-footer button {
+  margin: 3% auto 3% auto;
+  width: 40%;
+  height: 30px;
+  border: var(--btn-borders);
+  border-radius: 5px;
+  font: 700 1em/1em var(--main-font);
+}

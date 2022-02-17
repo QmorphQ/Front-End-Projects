@@ -1,0 +1,44 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 90vh;
+}
+.header {
+  flex-grow: 1;
+}
+.main {
+  flex-grow: 6;
+  display: flex;
+  flex-direction: row;
+}
+.aside {
+  flex-grow: 0;
+}
+.desk {
+  flex-grow: 1;
+  
+}
+.footer {
+  flex-grow: 1;
+}
+/*Service classes:*/
+.backstage{
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(156, 167, 172, 0.527);
+  position: absolute;
+  z-index: 3;
+}
+.height-out{
+ max-height: 50vh;
+}
+.fade-out{
+  opacity: 1;
+ width: 350px;
+ height: 150px;
+ z-index: 1000;
+}

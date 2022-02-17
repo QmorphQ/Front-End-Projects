@@ -1,0 +1,36 @@
+.filter{
+margin: 0 4%;
+display: flex;
+width: 100%;
+}
+.form-control{
+    border: var(--default-borders);
+    border-width: 1px;
+}
+.dropdown-toggle{
+    outline: none;
+    border: var(--default-borders);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: var(--main-color);
+    font: bold 1em/1em var(--main-font);
+}
+.dropdown-toggle:hover, .dropdown-toggle:focus, .dropdown-toggle:past{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    box-shadow: none;
+}
+.dropdown-menu{
+    border: var(--default-borders);
+    border-width: 1px;
+    
+}
+.dropdown-item{
+    border-bottom: var(--default-borders);
+    border-width: 1px;
+    font: 400 1.1em/1em var(--main-font);
+    color: var(--font-color);
+}
+.dropdown-item:hover{
+    color: var(--font-color);
+}

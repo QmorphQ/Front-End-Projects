@@ -1,0 +1,101 @@
+@import url("./__logo.css");
+@import url("./__autorization-form.css");
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--off-color);
+  border: 5px solid var(--main-color);
+  min-height: 15%;
+  max-height: 15%;
+  
+}
+.logo {
+  margin-left: 2%;
+}
+.header__form-container {
+  position: relative;
+  margin-right: 5%;
+}
+.header__modal-window {
+  position: absolute;
+  right: -4%;
+  top: 5%;
+  margin-right: 5%;
+  border-radius: 3px;
+  background-color: var(--off-color);
+  border: var(--default-borders);
+  overflow: hidden;
+  /*For fade-out:*/
+  opacity: 0;
+  transition: width 0.5s, height 0.5s, opacity 0.5s;
+  width: 0;
+  height: 0;
+}
+
+/*Create header btn:*/
+.header__btn-create-visit {
+  min-height: fit-content;
+  min-width: fit-content;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 5px;
+  border: var(--default-borders);
+  background-color: rgb(255, 255, 255);
+  color: var(--main-color);
+  font: 700 1em/1em var(--main-font);
+  transition: scale 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s, border 0.2s;
+}
+.header__btn-create-visit:hover {
+  border: var(--default-borders);
+  background-color: var(--main-color);
+  color: rgb(255, 255, 255);
+}
+.header__btn-create-visit:active {
+  border: var(--default-borders);
+  background-color: var(--main-color);
+  color: rgb(255, 255, 255);
+  transform: scale(0.9);
+  box-shadow: 2px 2px 20px 5px var(--main-color), -2px -2px 20px 5px var(--main-color);
+}
+
+/*Autorization header btn:*/
+.header__btn-autorization {
+  min-height: fit-content;
+  min-width: fit-content;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 5px;
+  border: var(--default-borders);
+  background-color: rgb(255, 255, 255);
+  color: var(--main-color);
+  font: 700 1em/1em var(--main-font);
+  transition: transform 0.5s;
+}
+.header__btn-autorization:hover {
+  color: var(--main-color);
+  transform: scale(1.05);
+  box-shadow: inset 0 0 30px 1px rgb(120, 200, 230);
+}
+
+
+
+.form_radio {
+  width: 100%;
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid #999;
+	border-radius: 6px;
+	user-select: none;
+}
+
+.radio-item[type=radio] {
+	display: none;
+}
+
+.form_radio:hover {
+	color: red;
+}

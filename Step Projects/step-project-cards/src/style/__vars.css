@@ -1,0 +1,13 @@
+:root{
+--main-font: 'Lato', sans-serif;
+/*'Source Sans Pro', sans-serif*/
+--main-color: rgb(35, 145, 180);
+--off-color: rgb(200, 255, 255);
+--default-borders: 1px solid var(--main-color);
+--btn-borders: 2px var(--main-color) solid;
+--font-color: rgb(20, 90, 110);
+--warn-color: rgb(211, 58, 58);
+--text-color: rgb(10, 45, 54);
+--title-font: 700 2em/1em var(--main-font);
+--third-color: rgb(201, 245, 210);
+}

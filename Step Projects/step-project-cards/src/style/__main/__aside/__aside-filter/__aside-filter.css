@@ -1,0 +1,23 @@
+.aside__filter-container {
+  border-bottom: var(--default-borders);
+  background-color: #FFF;
+}
+.filter__title {
+  text-align: center;
+}
+.filter__form {
+  display: flex;
+  flex-direction: column;
+}
+.filter__label {
+  display: flex;
+  flex-direction: column;
+}
+.filter__input {
+}
+.filter-btn__container {
+  display: flex;
+  justify-content: space-around;
+}
+.filter__filter-btn {
+}
