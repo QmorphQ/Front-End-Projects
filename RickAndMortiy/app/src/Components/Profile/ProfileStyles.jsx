@@ -1,0 +1,7 @@
+const styles = {
+    ProfileContainer: {
+        border: '1px solid red',
+        width: '200px',
+        height: '200px',
+    }
+}
