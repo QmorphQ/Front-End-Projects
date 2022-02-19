@@ -1,20 +1,29 @@
+// Libraries:
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+// -------------------------------------------------------------------------
+// MUI Components:
 import { TextField, Box } from "@mui/material";
 import { useInput } from "@mui/base";
 import Autocomplete, { createFilterOptions } from "@mui/material/Autocomplete";
+import CircularProgress from "@mui/material/CircularProgress";
+// -------------------------------------------------------------------------
 // Styles:
 import styles from "./SearchStyles.jsx";
-
 // ==========================================================================
+
 const filter = createFilterOptions();
 
-export default function Search({ fetchedData }) {
+export default function Search({ fetchedData, isLoading }) {
+  // ----------------------------------------
   const [value, setValue] = useState(null);
+
+  // ----------------------------------------
   return (
     <Box sx={styles.SearchContainer}>
       <Autocomplete
+        disabled={isLoading ? true : false}
         value={value}
         onChange={(event, newValue) => {
           if (typeof newValue === "string") {
@@ -73,10 +82,27 @@ export default function Search({ fetchedData }) {
         freeSolo
         renderInput={(params) => (
           <TextField
+            sx={{ border: "1px solid red", position: "relative" }}
             color="success"
             variant="filled"
             {...params}
-            label="Enter name"
+            label={isLoading ? "Loading..." : "Enter name"}
+            InputProps={{
+              ...params.InputProps,
+              endAdornment: (
+                <>
+                  {isLoading ? (
+                    <CircularProgress
+                      sx={{ position: "absolute", top: "30%", right: "12%" }}
+                      color="inherit"
+                      mb={3}
+                      size={20}
+                    />
+                  ) : null}
+                  {params.InputProps.endAdornment}
+                </>
+              ),
+            }}
           />
         )}
       />
@@ -85,13 +111,15 @@ export default function Search({ fetchedData }) {
 }
 
 Search.defaultProps = {
-    fetchedData: [
+  fetchedData: [
     { name: "test name 1" },
     { name: "test name 2" },
     { name: "test name 3" },
   ],
+  isLoading: false,
 };
 
 Search.propTypes = {
-    fetchedData: PropTypes.arrayOf(PropTypes.object),
+  fetchedData: PropTypes.arrayOf(PropTypes.object),
+  isLoading: PropTypes.bool,
 };

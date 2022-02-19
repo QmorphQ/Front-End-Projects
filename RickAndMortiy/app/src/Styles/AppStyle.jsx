@@ -9,6 +9,10 @@ const styles = {
         backgroundSize: `cover`,
         backgroundColor: '#5273c7',
         backgroundPosition: `center`,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        // alignItems: 'center',
 
     
     }
