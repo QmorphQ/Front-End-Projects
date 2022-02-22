@@ -1,48 +1,40 @@
-import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 // MUI components:
-import { Box } from "@mui/material";
+import { Box } from '@mui/material';
 // -------------------------------------------------
 // React components:
-import Layout from "./Components/Layout/Layout.jsx";
-import DisplayContainer from "./Components/DisplayContainer/DisplayContainer.jsx";
-import Profile from "./Components/Profile/Profile.jsx";
+import Layout from './Components/Layout/Layout.jsx';
+import DisplayContainer from './Components/DisplayContainer/DisplayContainer.jsx';
+import Profile from './Components/Profile/Profile.jsx';
 // -------------------------------------------------
 // Addons:
-import Helper from "./utils/Helper/Helper";
+import Helper from './utils/Helper/Helper';
 // =================================================
 
 function App() {
   const [updateComponent, setUpdateComponent] = useState(false);
   const [data, setData] = useState([{}]);
   const [favoriteCardsId, setfFavoriteCardsId] = useState([{}]);
-  const [requestStatus, setRequestStatus] = useState("sending");
+  const [requestStatus, setRequestStatus] = useState('sending');
   // -----------------------
-  const getData = async (url) => {
-    return fetch(url)
-      .then((r) => r.json())
-      .then((r) => setData(r.results))
-      .then(() => setTimeout(() => setRequestStatus("success"), 2000))
-      .catch(
-        (error) => (console.warn(error.message), setRequestStatus("error"))
-      );
-  };
+  const getData = async (url) => fetch(url)
+    .then((r) => r.json())
+    .then((r) => setData(r.results))
+    .then(() => setTimeout(() => setRequestStatus('success'), 2000))
+    .catch(
+      (error) => (setRequestStatus('error')),
+    );
   useEffect(() => {
     getData(Helper.urls.allCharacters);
   }, []);
-  useEffect(() => {
-    console.log("Request status: ", requestStatus);
-    requestStatus === "sending"
-      ? console.time("timer")
-      : console.timeEnd("timer");
-  }, [requestStatus]);
   useEffect(() => {
     Helper.setInitFavorites();
     if (Helper.getFavoriteItems().length > 1) {
       setfFavoriteCardsId(
         Helper.getFavoriteItems()
           .slice(1)
-          .map((str) => Number(str))
+          .map((str) => Number(str)),
       );
     }
   }, [updateComponent]);
@@ -53,23 +45,23 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={
+          element={(
             <Layout
               shouldUpdate={updateComponent}
               callbackFunc={setUpdateComponent}
               fetchedData={data}
-              loadingSatus={requestStatus === "sending"}
+              loadingSatus={requestStatus === 'sending'}
             />
-          }
+          )}
         >
           <Route
             index
-            element={
+            element={(
               <DisplayContainer
-                routePath={"profile"}
+                routePath="profile"
                 arrayOfCharacters={data}
               />
-            }
+            )}
           />
           <Route
             path="profile/:id"
@@ -77,14 +69,12 @@ function App() {
           />
           <Route
             path="favorite"
-            element={
+            element={(
               <DisplayContainer
-                routePath={"profile"}
-                arrayOfCharacters={data.filter((character) =>
-                  favoriteCardsId.includes(character.id)
-                )}
+                routePath="profile"
+                arrayOfCharacters={data.filter((character) => favoriteCardsId.includes(character.id))}
               />
-            }
+            )}
           />
           <Route
             path="favorite/profile/:id"

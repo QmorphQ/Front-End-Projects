@@ -20,7 +20,7 @@ export default function AuthBtn({ handler, text }) {
 // ==========================================================
 AuthBtn.defaultProps = {
   text: "test",
-  handler: () => console.log("test Auth button handler"),
+  handler: () => ("test Auth button handler"),
 };
 
 AuthBtn.propTypes = {

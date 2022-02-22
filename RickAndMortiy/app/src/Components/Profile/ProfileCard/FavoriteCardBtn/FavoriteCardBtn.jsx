@@ -24,7 +24,7 @@ export default function FavoriteCardBtn({ handler, transformCondition }) {
 }
 // ======================================================================
 FavoriteCardBtn.defaultProps = {
-  handler: () => console.log("tTest Card Favorite Btn"),
+  handler: () => ("tTest Card Favorite Btn"),
   transformCondition: false,
 };
 

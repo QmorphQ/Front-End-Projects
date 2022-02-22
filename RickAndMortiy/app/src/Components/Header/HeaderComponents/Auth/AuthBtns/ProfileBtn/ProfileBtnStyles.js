@@ -1,6 +1,6 @@
 const styles = {
   IconBtn: {
-    color: "#00ff01",
+    color: '#00ff01',
   },
   ProfileIcon: {
     width: 30,

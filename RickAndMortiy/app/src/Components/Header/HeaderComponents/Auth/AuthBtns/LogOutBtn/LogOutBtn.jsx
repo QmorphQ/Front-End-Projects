@@ -21,7 +21,7 @@ export default function LogOutBtn({ handler }) {
 }
 // =======================================================================
 LogOutBtn.defaultProps = {
-  handler: () => console.log("Test LogOutBtn handler"),
+  handler: () => ("Test LogOutBtn handler"),
 };
 
 LogOutBtn.propTypes = {

@@ -1,9 +1,9 @@
 const styles = {
   SearchContainer: {
-    backgroundColor: "white",
+    backgroundColor: 'white',
     width: {
-      xs: "100px",
-      md: "300px",
+      xs: '100px',
+      md: '300px',
     },
   },
 };

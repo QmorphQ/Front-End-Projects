@@ -1,6 +1,6 @@
 const styles = {
   LogOutBtnContainer: {
-    color: "#fff",
+    color: '#fff',
   },
   LogOutIcon: {
     width: 30,

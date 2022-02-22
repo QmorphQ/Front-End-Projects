@@ -1,7 +1,7 @@
 const styles = {
   IconBtn: {
-    color: "#fff",
-    "&:disabled": { color: "#00ff01" },
+    color: '#fff',
+    '&:disabled': { color: '#00ff01' },
   },
 };
 

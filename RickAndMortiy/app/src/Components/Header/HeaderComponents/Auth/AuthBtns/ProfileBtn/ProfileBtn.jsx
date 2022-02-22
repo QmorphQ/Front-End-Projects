@@ -23,7 +23,7 @@ export default function ProfileBtn({ handler }) {
 
 // =================================================
 ProfileBtn.defaultProps = {
-  handler: () => console.log("Test Profile handler"),
+  handler: () => ("Test Profile handler"),
 };
 
 ProfileBtn.propTypes = {

@@ -25,9 +25,6 @@ export default function Profile({ callbackFunc }) {
       )
       .then(() => setCardIsLoaded(true));
   }, [id]);
-  useEffect(() => {
-    console.log(id);
-  }, []);
   if (!cardIsLoaded) {
     return <h1>Loading</h1>;
   }
