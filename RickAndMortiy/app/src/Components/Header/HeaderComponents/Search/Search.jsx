@@ -10,7 +10,7 @@ import Autocomplete, { createFilterOptions } from "@mui/material/Autocomplete";
 import CircularProgress from "@mui/material/CircularProgress";
 // -------------------------------------------------------------------------
 // Styles:
-import styles from "./SearchStyles.jsx";
+import styles from "./SearchStyles";
 // ==========================================================================
 
 const filter = createFilterOptions();
@@ -23,6 +23,7 @@ export default function Search({ fetchedData, isLoading }) {
   return (
     <Box sx={styles.SearchContainer}>
       <Autocomplete
+        handleHomeEndKeys
         disabled={isLoading ? true : false}
         value={value}
         onChange={(event, newValue) => {
@@ -74,7 +75,7 @@ export default function Search({ fetchedData, isLoading }) {
           return option.name;
         }}
         renderOption={(props, option) => (
-          <Link to={"#"} {...props}>
+          <Link to={`profile/${option.id}`} {...props}>
             {option.name}
           </Link>
         )}
@@ -82,7 +83,7 @@ export default function Search({ fetchedData, isLoading }) {
         freeSolo
         renderInput={(params) => (
           <TextField
-            sx={{ border: "1px solid red", position: "relative" }}
+            sx={{ position: "relative" }}
             color="success"
             variant="filled"
             {...params}

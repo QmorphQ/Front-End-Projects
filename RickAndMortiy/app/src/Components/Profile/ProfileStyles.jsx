@@ -1,7 +1,11 @@
 const styles = {
-    ProfileContainer: {
-        border: '1px solid red',
-        width: '200px',
-        height: '200px',
-    }
-}
+  ProfileContainer: {
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+};
+
+export default styles;
