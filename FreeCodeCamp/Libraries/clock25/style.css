@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(119, 174, 211);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  border: 3px solid black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.timer .controller {
+  border: 3px solid black;
+  border-radius: 5px;
+}
+.timer .controller__title {
+  font-size: 1.5em;
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+}
+.timer .controller__flex-container {
+  display: flex;
+}
+.timer .controller__display {
+  font-size: 1.5em;
+  font-weight: 700;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid rgb(0, 0, 0);
+  padding: 10px;
+  background-color: rgb(244, 216, 180);
+}
+.timer .controller__btns-container {
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+}
+.timer .controller .btn {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.session__flex-container {
+  flex-direction: column;
+}
+
+.session__btns-container {
+  flex-direction: row !important;
+}
+
+.timer-controller {
+  margin: 30px;
+}
+
+.alarm {
+  color: rgb(240, 10, 10);
+}
+
+/*# sourceMappingURL=style.css.map */

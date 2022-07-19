@@ -1,3 +1,29 @@
+/* global React, ReactDOM */
+/* eslint-disable react/no-multi-comp, react/prop-types, max-len */
+// coded by @no-stack-dub-sack (github) / @no_stack_sub_sack (codepen)
+
+/** NOTES:
+/** Dependencies are React, ReactDOM, and
+    Accurate_Interval.js by Squuege (external script
+    to keep setInterval() from drifting over time &
+    thus ensuring timer goes off at correct mark).
+/** Utilizes embedded <Audio> tag to ensure audio
+    plays when timer tab is inactive or browser is
+    minimized ( rather than new Audio().play() ).
+/** Audio of this fashion not supported on most
+    mobile devices it would seem (bummer I know).
+**/
+
+// PROJECTOR SELECTOR FOR EXTERNAL TEST SCRIPT:
+// eslint-disable-next-line no-unused-vars
+const projectName = '25-5-clock';
+
+// Accurate_Interval.js
+// Thanks Squeege! For the elegant answer provided to this question:
+// http://stackoverflow.com/questions/8173580/setinterval-timing-slowly-drifts-away-from-staying-accurate
+// Github: https://gist.github.com/Squeegy/1d99b3cd81d610ac7351
+// Slightly modified to accept 'normal' interval/timeout format (func, time).
+
 const accurateInterval = function (fn, time) {
   var cancel, nextAt, timeout, wrapper;
   nextAt = new Date().getTime() + time;

@@ -1,15 +1,15 @@
 // Import:
-import { useState, useEffect } from 'react'
+// import { useState, useEffect } from 'react'
 import { Container, Box } from "@mui/material";
 // ===============================
 // -------------------------------
 // ++++++
 const windowH = "200px";
-const windowW = "80%";
-const itemWidth = "200px";
+// const windowW = "80%";
+// const itemWidth = "200px";
 const itemHeight = "200px";
-const itemsQuantity = 3;
-const itemGap = "5px";
+// const itemsQuantity = 3;
+// const itemGap = "5px";
 
 function CarouselItem({ text }) {
   return (
@@ -69,7 +69,7 @@ export default function Carousel({ ...props }) {
             justifyContent: "space-between",
             alignItems: "center",
           }}
-        ></Box>
+        ><CarouselItem /></Box>
       </Box>
     </Container>
   );
