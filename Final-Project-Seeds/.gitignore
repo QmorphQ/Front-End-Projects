@@ -5,11 +5,9 @@ package-lock.json
 .pnp.js
 .vscode
 
-# testing
-/coverage
+
 
 # production
-build/
 documentation
 
 # misc
