@@ -2,7 +2,7 @@
 ## Step Projects made during studying:
 - [The Hum (HTML, CSS)](https://ham-chi.vercel.app/)
 - [Forkio (Gulp, SCSS, Responsive design)](https://forkio-sage.vercel.app/)
-- [Final Step Project "Seeds" (React, Redux Tool-Kit, React Router, Router, MUI, Formik and etc.)](https://final-step-project-seeds.vercel.app/)
+- [Final Step Project "Seeds" (React, Redux Tool-Kit, React Router, Router, MUI, Formik and etc.)](https://seedra.onrender.com/)
 ### The following technologies were used:
 - HTML, CSS, JS
 - SCSS, Bootstrap, MUI, Styled Components
